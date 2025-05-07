@@ -1,0 +1,32 @@
+[
+  {
+    "ip": "192.168.100.107",
+    "hostname": "",
+    "ports": [
+      {
+        "port": 8008,
+        "service": "http",
+        "version": "",
+        "cves": []
+      },
+      {
+        "port": 8009,
+        "service": "castv2",
+        "version": "",
+        "cves": []
+      },
+      {
+        "port": 8443,
+        "service": "https-alt",
+        "version": "",
+        "cves": []
+      },
+      {
+        "port": 9000,
+        "service": "cslistener",
+        "version": "",
+        "cves": []
+      }
+    ]
+  }
+]
