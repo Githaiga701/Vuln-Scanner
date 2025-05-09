@@ -21,5 +21,18 @@ class TestScannerFunctions(unittest.TestCase):
         result = fetch_cves("http", "2.4.49")
         self.assertEqual(result, {"result": {"CVE_Items": []}})
 
+    @patch('scanner.requests.get')
+    def test_cve_lookup(self, mock_get):
+        mock_response = MagicMock()
+        mock_response.status_code = 200  # Add this
+        mock_response.json.return_value = {"result": {"CVE_Items": []}}
+        mock_get.return_value = mock_response
+
+        from scanner import fetch_cves
+        result = fetch_cves("http", "2.4.49")
+        self.assertEqual(result, {"result": {"CVE_Items": []}})
+
 if __name__ == '__main__':
     unittest.main()
+
+    

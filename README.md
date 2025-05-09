@@ -18,3 +18,9 @@ python scanner.py -t 192.168.1.0/24 -j 8 -o results.json
 
 ## Configuration
 Edit `config.ini` for scan parameters
+
+## Phase 1: Scanning Module
+- Nmap integration
+- CVE lookup via NVD API
+- JSON output generation
+- Parallel scanning

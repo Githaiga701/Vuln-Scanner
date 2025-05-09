@@ -1,32 +1,29 @@
-[
-  {
-    "ip": "192.168.100.107",
-    "hostname": "",
-    "ports": [
-      {
-        "port": 8008,
-        "service": "http",
-        "version": "",
-        "cves": []
-      },
-      {
-        "port": 8009,
-        "service": "castv2",
-        "version": "",
-        "cves": []
-      },
-      {
-        "port": 8443,
-        "service": "https-alt",
-        "version": "",
-        "cves": []
-      },
-      {
-        "port": 9000,
-        "service": "cslistener",
-        "version": "",
-        "cves": []
-      }
-    ]
-  }
-]
+{
+  "scan": [
+    {
+      "ip": "127.0.0.1",
+      "hostname": "localhost",
+      "ports": [
+        {
+          "port": 80,
+          "service": "http",
+          "version": "2.4.58",
+          "cves": []
+        },
+        {
+          "port": 631,
+          "service": "ipp",
+          "version": "2.4",
+          "cves": []
+        },
+        {
+          "port": 5432,
+          "service": "postgresql",
+          "version": "9.6.0 or later",
+          "cves": []
+        }
+      ]
+    }
+  ],
+  "prioritized": []
+}
